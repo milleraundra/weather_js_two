@@ -8,14 +8,30 @@
 <body>
   <div class="container">
     <h1>Get Weather Conditions From Anywhere!</h1>
-    <label for="location">Enter a location:</label>
-    <input id="location" type="text">
-    <button class="btn btn-success" id="weatherLocation">Get Current Humidity!</button>
-    <h5>Get Temperature In:</h5>
-    <button class="btn btn-warning" id="weatherTempFahrenheit">Fahrenheit</button>
-    <button class="btn btn-default" id="weatherTempCelsius">Celsius</button>
-    <button class="btn btn-danger" id="weatherTempKelvin">Kelvin</button>
-    <div class="showWeather"></div>
+    <label for="location1">Enter a location:</label>
+    <input id="location1" type="text">
+    <label for="location2">Enter a second location:</label>
+    <input id="location2" type="text">
+    <button class="btn btn-success" id="weatherConditions">Get The Weather!</button>
+    <div class="showWeather">
+      <div class="col-md-6">
+        <h4 id="city_1"></h4>
+        <div id="temperature_1"></div>
+        <div id="weather_1"></div>
+        <div id="humidity_1"></div>
+        <div id="wind_1"></div>
+      </div>
+      <div class="col-md-6">
+        <h4 id="city_2"></h4>
+        <div id="temperature_2"></div>
+        <div id="weather_2"></div>
+        <div id="humidity_2"></div>
+        <div id="wind_2"></div>
+      </div>
+
+
+
+    </div>
   </div>
 </body>
 </html>

@@ -2,13 +2,13 @@ function kelvinConvertFahrenheit(kelvin_input) {
   var kelvin = parseInt(kelvin_input);
   var fahrenheit = (1.8 * (kelvin-273)) + 32;
   return Math.round(fahrenheit);
-};
+}
 
 function kelvinConvertCelsius(kelvin_input) {
   var kelvin = parseInt(kelvin_input);
   var celsius = kelvin_input - 273.15;
   return Math.round(celsius);
-};
+}
 
 //Fahrenheit button
 $(document).ready(function() {
