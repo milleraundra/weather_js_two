@@ -13,8 +13,6 @@ var displayStuff = function(response, city, number) {
 var getWeather2 = function(city) {
   $.get("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey).then(function(response) {
     displayStuff(response, city, 2);
-    // var city2 = $("input#location2").val();
-    // getWeather(city2, 2);
     }).fail(function(error) {
       if(error.responseJSON) {
         $('.showWeather').text(error.responseJSON.message);
